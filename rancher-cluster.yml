@@ -1,0 +1,14 @@
+nodes:
+ - address: 192.168.7.181
+   user: rancher
+   role: [controlplane,worker,etcd]
+ - address: 192.168.7.184
+   user: rancher
+   role: [controlplane,worker,etcd]
+ - address: 192.168.7.198
+   user: rancher
+   role: [controlplane,worker,etcd]
+services:
+ etcd:
+ snapshot: true
+ creation: 6h
